@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
+
+body {
+  font-family: "Plus Jakarta Sans";
+  margin: 0;
+  padding: 0;
+}
+
+/* variables */
+:root {
+  --primary-color: #4f46e5;
+}
+
+/* Utility classes */
+.container {
+  width: 1440px;
+  margin: 0 auto 0 auto;
+}
+
+/* Reset CSS */
+button {
+  border: none;
+}
+
+/* Navbar CSS */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav img {
+  width: 110px;
+}
+
+nav ul {
+  display: flex;
+  gap: 32px;
+}
+
+nav ul li {
+  list-style: none;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+nav div {
+  display: flex;
+  gap: 8px;
+}
+
+.btn {
+  padding: 12px 20px 12px 20px;
+  background-color: transparent;
+  border-radius: 1234px;
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.btn-sign-up {
+  border: 2px solid #cbd5e1;
+}
+
+/* Banner Section */
+#banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+#download-from img {
+  width: 132px;
+  height: 44px;
+}
+
+#banner-img {
+  width: 1010px;
+  height: 600px;
+}
