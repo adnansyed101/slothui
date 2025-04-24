@@ -1,5 +1,6 @@
 const companiesContainer = document.getElementById("logo-container");
 const featuresContainer = document.getElementById("features-container");
+const achievementsContainer = document.getElementById("achievements-container");
 
 const companyLogos = [
   { src: "delta.png", alt: "Delta" },
@@ -48,6 +49,12 @@ const primaryFeatures = [
   },
 ];
 
+const achievements = [
+  { title: "420%", subtitle: "Data Efficiency" },
+  { title: "708+", subtitle: "Conversion Rate" },
+  { title: "1.82M", subtitle: "AI LLM Scale" },
+];
+
 document.addEventListener("DOMContentLoaded", () => {
   // Company Logos Section
   companyLogos.forEach((logo) => {
@@ -70,5 +77,14 @@ document.addEventListener("DOMContentLoaded", () => {
         <p>${feature.desc}</p>
       </div>
 `;
+  });
+
+  achievements.forEach((achievement) => {
+    achievementsContainer.innerHTML += `
+    <div>
+      <h3>${achievement.title}</h3>
+      <p>${achievement.subtitle}</p>
+    </div>
+    `;
   });
 });
