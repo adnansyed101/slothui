@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
 
-body {
+* {
   font-family: "Plus Jakarta Sans";
   margin: 0;
   padding: 0;
@@ -168,4 +168,31 @@ nav div {
   font-size: 16px;
   font-weight: 400;
   line-height: 160%;
+}
+
+/* Achievements */
+#achievements {
+  background-color: #f8fafc;
+  padding: 96px 0 96px 0;
+}
+
+#achievements img {
+  padding: 14px;
+  background-color: #eef2ff;
+  border-radius: 100%;
+}
+
+#achievements h2 {
+  font-size: 36px;
+  font-weight: 800;
+  line-height: 44px;
+  letter-spacing: -1.4%;
+}
+
+#achievements-container h3 {
+  color: var(--primary-color);
+  font-weight: 700;
+  line-height: 68px;
+  font-size: 60px;
+  letter-spacing: -1.8%;
 }
