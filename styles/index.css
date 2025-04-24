@@ -17,6 +17,15 @@ body {
   margin: 0 auto 0 auto;
 }
 
+.pill {
+  background: #eef2ff;
+  padding: 6px 12px 6px 12px;
+  color: var(--primary-color);
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 1234px;
+}
+
 /* Reset CSS */
 button {
   border: none;
@@ -69,8 +78,19 @@ nav div {
 #banner {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  align-items: center;
   text-align: center;
+  margin-top: 96px;
+}
+
+#banner div {
+  width: 800px;
+}
+
+#banner h1 {
+  font-size: 60px;
+  font-weight: 800;
+  line-height: 68px;
 }
 
 #download-from img {
