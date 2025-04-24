@@ -81,16 +81,31 @@ nav div {
   align-items: center;
   text-align: center;
   margin-top: 96px;
+  background: #ffffff;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 1) 30%,
+    rgba(231, 241, 255, 1) 50%,
+    rgba(159, 167, 250, 1) 100%
+  );
 }
 
 #banner div {
   width: 800px;
+  margin-top: 10px;
 }
 
 #banner h1 {
   font-size: 60px;
   font-weight: 800;
   line-height: 68px;
+}
+
+#banner p {
+  margin-bottom: 48px;
+  font-size: 18px;
+  font-weight: 400;
+  color: #475569;
 }
 
 #download-from img {
