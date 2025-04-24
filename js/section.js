@@ -1,6 +1,7 @@
 const companiesContainer = document.getElementById("logo-container");
 const featuresContainer = document.getElementById("features-container");
 const achievementsContainer = document.getElementById("achievements-container");
+const forWhomContainer = document.getElementById("for-whom-container");
 
 const companyLogos = [
   { src: "delta.png", alt: "Delta" },
@@ -49,6 +50,24 @@ const primaryFeatures = [
   },
 ];
 
+const forWhomText = [
+  {
+    title: "Convallis tellus id interdum velit",
+    subtitle:
+      "Est pellentesque elit ullamcorper dignissim cras. In pellentesque massa placerat duis ultricies.",
+  },
+  {
+    title: "Id interdum velit laoreet id donec ultrices",
+    subtitle:
+      "Donec massa sapien faucibus et molestie ac feugiat sed. Congue mauris rhoncus aenean vel elit scelerisque.",
+  },
+  {
+    title: "Sapien et ligula ullamcorper malesuada",
+    subtitle:
+      "Donec massa sapien faucibus et molestie ac feugiat sed. Congue mauris rhoncus aenean vel elit scelerisque.",
+  },
+];
+
 const achievements = [
   { title: "420%", subtitle: "Data Efficiency" },
   { title: "708+", subtitle: "Conversion Rate" },
@@ -84,6 +103,18 @@ document.addEventListener("DOMContentLoaded", () => {
     <div>
       <h3>${achievement.title}</h3>
       <p>${achievement.subtitle}</p>
+    </div>
+    `;
+  });
+
+  forWhomText.forEach((text) => {
+    forWhomContainer.innerHTML += `
+    <div class="card">
+      <div class="vertical-line"></div>
+        <div>
+          <h5>${text.title}</h5>
+          <p>${text.subtitle}</p>
+        </div>
     </div>
     `;
   });
