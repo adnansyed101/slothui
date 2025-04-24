@@ -164,7 +164,7 @@ nav div {
   font-weight: 700;
   font-size: 20px;
   line-height: 28px;
-  letter-spacing: -1%;
+  padding: 16px 0;
 }
 
 #features-container {
@@ -216,7 +216,6 @@ nav div {
   line-height: 68px;
   font-size: 60px;
   letter-spacing: -1.8%;
-  margin-bottom: 16px;
 }
 
 #achievements-container p {
@@ -225,4 +224,57 @@ nav div {
   line-height: 24px;
   letter-spacing: -0.8%;
   color: var(--subtitle-text-color);
+}
+
+/* For Whom Section */
+#for-whom {
+  padding: 96px 0;
+  width: 1216px;
+}
+
+#for-whom .content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#for-whom .card {
+  display: flex;
+  gap: 24px;
+  margin-bottom: 8px;
+  width: 468px;
+}
+
+#for-whom .card .vertical-line {
+  background-color: #e0e7ff;
+  border-radius: 1000px;
+  width: 6px;
+}
+
+#for-whom .card:first-child .vertical-line {
+  background-color: var(--primary-color);
+}
+
+#for-whom .card div:nth-child(2) {
+  padding: 24px 0;
+}
+
+#for-whom .card h5 {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 28px;
+  color: var(--subtitle-text-color);
+  margin-bottom: 12px;
+}
+
+#for-whom .card p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+  color: var(--subtitle-text-color);
+}
+
+#for-whom .content img {
+  height: 592px;
+  width: 592px;
 }
