@@ -59,6 +59,14 @@
   text-align: center;
 }
 
+.section-title {
+  font-size: 36px;
+  font-weight: 800;
+  line-height: 44px;
+  letter-spacing: -1.4%;
+  margin: 24px 0 24px 0;
+}
+
 /* Reset CSS */
 button {
   border: none;
@@ -69,6 +77,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 16px 0 16px 0;
 }
 
 nav img {
@@ -108,6 +117,7 @@ nav div {
   font-size: 60px;
   font-weight: 800;
   line-height: 68px;
+  margin: 24px 0 24px 0;
 }
 
 #banner p {
@@ -122,6 +132,7 @@ nav div {
 #banner-img {
   width: 1010px;
   height: 600px;
+  margin-top: 64px;
 }
 
 /* Companies Section */
@@ -182,11 +193,21 @@ nav div {
   border-radius: 100%;
 }
 
-#achievements h2 {
-  font-size: 36px;
-  font-weight: 800;
-  line-height: 44px;
-  letter-spacing: -1.4%;
+#achievements-container {
+  width: 800px;
+  margin-top: 64px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+#achievements-container div {
+  padding: 0 32px 0 32px;
+}
+
+#achievements-container div:nth-child(2) {
+  border-left: 1px solid #cbd5e1;
+  border-right: 1px solid #cbd5e1;
 }
 
 #achievements-container h3 {
@@ -195,4 +216,13 @@ nav div {
   line-height: 68px;
   font-size: 60px;
   letter-spacing: -1.8%;
+  margin-bottom: 16px;
+}
+
+#achievements-container p {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: -0.8%;
+  color: var(--subtitle-text-color);
 }
