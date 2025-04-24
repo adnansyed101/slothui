@@ -9,6 +9,7 @@ body {
 /* variables */
 :root {
   --primary-color: #4f46e5;
+  --subtitle-text-color: #475569;
 }
 
 /* Utility classes */
@@ -48,7 +49,7 @@ body {
 .header-subtitle {
   font-size: 18px;
   font-weight: 400;
-  color: #475569;
+  color: var(--subtitle-text-color);
 }
 
 .center-items {
@@ -137,4 +138,34 @@ nav div {
   column-gap: 60px;
   margin: 0 auto 0 auto;
   width: 1216px;
+}
+
+/* Primary Features Section */
+#features {
+  padding: 96px 0 96px 0;
+}
+
+.feature {
+  width: 384px;
+}
+
+.feature h4 {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 28px;
+  letter-spacing: -1%;
+}
+
+#features-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 64px;
+  gap: 32px;
+}
+
+.feature p {
+  color: var(--subtitle-text-color);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 160%;
 }
