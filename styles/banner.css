@@ -1,0 +1,33 @@
+/* Banner Section */
+#banner {
+  margin-top: 96px;
+  background: #ffffff;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 1) 30%,
+    rgba(231, 241, 255, 1) 50%,
+    rgba(159, 167, 250, 1) 100%
+  );
+}
+
+#banner h1 {
+  font-size: 60px;
+  font-weight: 800;
+  line-height: 68px;
+  margin: 24px 0 24px 0;
+}
+
+#banner p {
+  margin-bottom: 48px;
+}
+
+#download-from img {
+  width: 132px;
+  height: 44px;
+}
+
+#banner-img {
+  width: 1010px;
+  height: 600px;
+  margin-top: 64px;
+}
