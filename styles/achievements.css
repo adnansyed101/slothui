@@ -6,7 +6,7 @@
 
 #achievements img {
   padding: 14px;
-  background-color: #eef2ff;
+  background-color: var(--secondary-bg-color);
   border-radius: 100%;
 }
 
