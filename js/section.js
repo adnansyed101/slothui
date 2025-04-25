@@ -146,6 +146,21 @@ const testimonials = [
   },
 ];
 
+const locations = [
+  { country: "Japan", street: "221b Banzai Street", city: "Tokyo, TO 77812" },
+  { country: "USA", street: "221b Freedom Street", city: "New York, NY 21231" },
+  {
+    country: "Canada",
+    street: "221b Maple Syrup Street",
+    city: "Ottawa, OW 77847",
+  },
+  {
+    country: "South Korea",
+    street: "221b Samyang Street",
+    city: "Gangnam, GM 22124",
+  },
+];
+
 document.addEventListener("DOMContentLoaded", () => {
   const companiesContainer = document.getElementById("logo-container");
   const featuresContainer = document.getElementById("features-container");
@@ -156,6 +171,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const testimonialsContainer = document.getElementById(
     "testimonials-container"
   );
+  const locationsContainer = document.getElementById("locations-container");
 
   // Company Logos Section
   companyLogos.forEach((logo) => {
@@ -221,6 +237,17 @@ document.addEventListener("DOMContentLoaded", () => {
           </div>
         </div>
       </div>
+    `;
+  });
+
+  locations.forEach((location) => {
+    locationsContainer.innerHTML += `
+        <div class="location">
+          <img src="./assets/icons/pin.svg" alt="Map Pin" />
+          <h5>${location.country}</h5>
+          <p>${location.street}</p>
+          <p>${location.city}</p>
+        </div>
     `;
   });
 });
