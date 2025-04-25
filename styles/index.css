@@ -5,6 +5,7 @@
   font-family: "Plus Jakarta Sans";
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 button {
@@ -15,6 +16,7 @@ button {
 :root {
   --primary-color: #4f46e5;
   --subtitle-text-color: #475569;
+  --secondary-text-color: #1E293B;
   --primary-bg-color: #f8fafc;
   --border-color: #e2e8f0;
   --secondary-bg-color: #eef2ff;
@@ -22,7 +24,7 @@ button {
 
 /* Utility classes */
 .container {
-  width: 1440px;
+  width: 1216px;
   margin: 0 auto 0 auto;
 }
 
@@ -48,6 +50,10 @@ button {
 
 .btn-sign-up {
   border: 2px solid #cbd5e1;
+}
+
+.btn-outline {
+  border: 1px solid var(--primary-color);
 }
 
 .header-width {
