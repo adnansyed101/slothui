@@ -1,0 +1,33 @@
+#download-app {
+  background-color: var(--secondary-bg-color);
+}
+
+#download-app-content {
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+#download-app-content .content {
+  width: 560px;
+  margin: auto;
+}
+
+#download-app-content h4 {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 44px;
+  color: var(--secondary-text-color);
+}
+
+#download-app-content p {
+  font-weight: 600;
+  size: 18px;
+  margin: 24px 0 48px 0;
+  color: var(--subtitle-text-color);
+}
+
+#download-app-content .dashboard-1-large {
+  width: 710px;
+}
