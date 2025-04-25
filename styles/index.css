@@ -17,6 +17,7 @@ button {
   --subtitle-text-color: #475569;
   --primary-bg-color: #f8fafc;
   --border-color: #e2e8f0;
+  --secondary-bg-color: #eef2ff;
 }
 
 /* Utility classes */
@@ -26,7 +27,7 @@ button {
 }
 
 .pill {
-  background: #eef2ff;
+  background: var(--secondary-bg-color);
   padding: 6px 12px 6px 12px;
   color: var(--primary-color);
   font-size: 16px;
