@@ -1,0 +1,29 @@
+/* Primary Features Section */
+#features {
+  padding: 96px 0 96px 0;
+}
+
+.feature {
+  width: 384px;
+}
+
+.feature h4 {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 28px;
+  padding: 16px 0;
+}
+
+#features-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 64px;
+  gap: 32px;
+}
+
+.feature p {
+  color: var(--subtitle-text-color);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 160%;
+}
