@@ -41,6 +41,7 @@ button {
   padding: 12px 20px 12px 20px;
   background-color: transparent;
   border-radius: 1234px;
+  font-weight: 700;
 }
 
 .btn-primary {
@@ -54,6 +55,7 @@ button {
 
 .btn-outline {
   border: 1px solid var(--primary-color);
+  color: var(--primary-color);
 }
 
 .header-width {
