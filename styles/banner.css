@@ -14,7 +14,7 @@
   font-size: 60px;
   font-weight: 800;
   line-height: 68px;
-  margin: 24px 0 24px 0;
+  margin: 24px 0;
 }
 
 #banner p {
@@ -30,4 +30,22 @@
   width: 1010px;
   height: 600px;
   margin-top: 64px;
+}
+
+@media only screen and (max-width: 425px) {
+  /*Small smartphones [325px -> 425px]*/
+  #banner {
+    margin-top: 64px;
+  }
+
+  #banner h1 {
+    font-size: 36px;
+    line-height: 44px;
+    letter-spacing: -0.5px;
+  }
+
+  #banner-img {
+    width: 342px;
+    height: 320px;
+  }
 }

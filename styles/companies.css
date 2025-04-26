@@ -1,7 +1,7 @@
 /* Companies Section */
 #companies {
   background: var(--primary-bg-color);
-  padding: 64px 0 64px 0;
+  padding: 64px 0;
 }
 
 #logo-container {
@@ -10,4 +10,19 @@
   justify-content: center;
   row-gap: 32px;
   column-gap: 60px;
+}
+
+@media only screen and (max-width: 425px) {
+  /*Small smartphones [325px -> 425px]*/
+  #companies img {
+    width: 96px;
+    height: 64px;
+    justify-content: start;
+  }
+
+  #logo-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0;
+  }
 }

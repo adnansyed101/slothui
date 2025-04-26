@@ -29,3 +29,28 @@ nav div {
   display: flex;
   gap: 8px;
 }
+
+#menu-btn {
+  display: none;
+  visibility: hidden;
+}
+
+@media only screen and (max-width: 425px) {
+  /*Small smartphones [325px -> 425px]*/
+  nav ul {
+    display: none;
+    visibility: hidden;
+  }
+
+  #auth-btn {
+    display: none;
+    visibility: hidden;
+  }
+
+  #menu-btn {
+    display: block;
+    visibility: visible;
+    height: 24px;
+    width: 24px;
+  }
+}
