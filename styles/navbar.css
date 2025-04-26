@@ -6,6 +6,10 @@ nav {
   padding: 16px 0 16px 0;
 }
 
+.btn-sign-up {
+  border: 2px solid #cbd5e1;
+}
+
 nav img {
   width: 110px;
 }
@@ -16,7 +20,6 @@ nav ul {
 }
 
 nav ul li {
-  list-style: none;
   cursor: pointer;
   font-size: 16px;
   font-weight: 700;
