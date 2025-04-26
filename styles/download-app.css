@@ -9,7 +9,7 @@
 
 #download-app-content .content {
   width: 560px;
-  margin: auto;
+  margin: 0 auto;
 }
 
 #download-app-content h4 {
@@ -28,4 +28,65 @@
 
 #download-app-content .dashboard-1-large {
   width: 710px;
+}
+
+#download-app-content .dashboard-2-small {
+  display: none;
+  visibility: hidden;
+}
+
+@media (max-width: 769px) and (min-width: 425px) {
+  #download-app-content .dashboard-1-large {
+    width: 400px;
+  }
+
+  #download-app-content .content {
+    width: 100%;
+    padding-top: 10px;
+    padding-left: 10px;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  /*Small smartphones [325px -> 425px]*/
+  #download-app {
+    padding: 64px 0;
+  }
+
+  #download-app-content {
+    flex-direction: column;
+  }
+
+  #download-app-content .content {
+    width: 342px;
+    margin-bottom: 48px;
+    padding: 0;
+  }
+
+  #download-app-content .buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  #download-app-content .dashboard-1-large {
+    display: none;
+    visibility: hidden;
+  }
+
+  #download-app-content .dashboard-2-small {
+    display: block;
+    visibility: visible;
+    width: 342px;
+  }
+}
+
+@media (max-width: 360px) {
+  #download-app-content .content {
+    width: 318px;
+  }
+
+  #download-app-content .dashboard-2-small {
+    width: 318px;
+  }
 }

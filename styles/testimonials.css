@@ -53,3 +53,13 @@
   line-height: 160%;
   color: var(--subtitle-text-color);
 }
+
+@media only screen and (max-width: 425px) {
+  /*Small smartphones [325px -> 425px]*/
+  #testimonials-container {
+    column-count: 1;
+    column-gap: 0;
+  }
+}
+
+

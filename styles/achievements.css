@@ -19,12 +19,13 @@
 }
 
 #achievements-container div {
-  padding: 0 32px 0 32px;
+  padding: 0 32px;
 }
 
 #achievements-container div:nth-child(2) {
   border-left: 1px solid #cbd5e1;
   border-right: 1px solid #cbd5e1;
+  padding: 0 32px;
 }
 
 #achievements-container h3 {
@@ -41,4 +42,27 @@
   line-height: 24px;
   letter-spacing: -0.8%;
   color: var(--subtitle-text-color);
+}
+
+@media only screen and (max-width: 425px) {
+  /*Small smartphones [325px -> 425px]*/
+  #achievements-container {
+    width: 342px;
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  #achievements-container div:nth-child(2) {
+    border-left: none;
+    border-right: none;
+    border-top: 1px solid #cbd5e1;
+    border-bottom: 1px solid #cbd5e1;
+    padding: 32px 0;
+  }
+}
+
+@media (max-width: 360px) {
+  #achievements-container {
+    width: 318px;
+  }
 }

@@ -3,10 +3,6 @@
   padding: 96px 0 96px 0;
 }
 
-.feature {
-  width: 384px;
-}
-
 .feature h4 {
   font-weight: 700;
   font-size: 20px;
@@ -26,4 +22,14 @@
   font-size: 16px;
   font-weight: 400;
   line-height: 160%;
+}
+
+@media only screen and (max-width: 425px) {
+  /*Small smartphones [325px -> 425px]*/
+  #features-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-top: 64px;
+    gap: 32px;
+  }
 }

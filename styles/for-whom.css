@@ -49,3 +49,42 @@
   height: 592px;
   width: 592px;
 }
+
+@media (max-width: 769px) and (min-width: 425px) {
+  /*Small smartphones [325px -> 425px]*/
+
+  #for-whom .card {
+    width: 300px;
+  }
+
+  #for-whom .content img {
+    width: 300px;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  /*Small smartphones [325px -> 425px]*/
+  #for-whom .content {
+    margin-top: 40px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #for-whom .card {
+    width: 342px;
+  }
+
+  #for-whom .content img {
+    width: 342px;
+  }
+}
+
+@media (max-width: 360px) {
+  #for-whom .content img {
+    width: 318px;
+  }
+
+  #for-whom .card {
+    width: 318px;
+  }
+}

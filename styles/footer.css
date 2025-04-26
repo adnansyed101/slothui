@@ -40,3 +40,29 @@ footer {
   line-height: 20px;
   color: #94a3b8;
 }
+
+@media only screen and (max-width: 425px) {
+  /*Small smartphones [325px -> 425px]*/
+  #footer-links-container {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  #footer-main {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  #footer-main .first-item {
+    order: 1;
+  }
+
+  #footer-main .second-item {
+    order: 3;
+    margin-top: 32px;
+  }
+
+  #footer-main .third-item {
+    order: 2;
+  }
+}

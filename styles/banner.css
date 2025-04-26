@@ -28,8 +28,19 @@
 
 #banner-img {
   width: 1010px;
-  height: 600px;
+
   margin-top: 64px;
+}
+
+#banner-img-small {
+  display: none;
+  visibility: hidden;
+}
+
+@media (max-width: 769px) and (min-width: 425px) {
+  #banner-img {
+    width: 730px;
+  }
 }
 
 @media only screen and (max-width: 425px) {
@@ -45,7 +56,20 @@
   }
 
   #banner-img {
+    display: none;
+    visibility: hidden;
+  }
+
+  #banner-img-small {
+    display: block;
+    visibility: visible;
     width: 342px;
-    height: 320px;
+  }
+}
+
+@media only screen and (max-width: 330px) {
+  /*Small smartphones [325px -> 425px]*/
+  #banner-img-small {
+    width: 300px;
   }
 }
