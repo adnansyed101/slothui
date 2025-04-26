@@ -230,6 +230,14 @@ const locations = [
   },
 ];
 
+const accordions = [
+  "Enim sed faucibus turpis in eu mi bibendum neque egestas?",
+  "Amet consectetur adipiscing elit pellentesque habitant morbi tristique?",
+  "Elit pellentesque habitant morbi tristique senectus?",
+  "Gravida quis blandit turpis cursus in hac. Mi ipsum faucibus vitae aliquet nec?",
+  "Est pellentesque elit ullamcorper dignissim cras. In pellentesque massa placerat?",
+];
+
 document.addEventListener("DOMContentLoaded", () => {
   const companiesContainer = document.getElementById("logo-container");
   const featuresContainer = document.getElementById("features-container");
@@ -241,6 +249,7 @@ document.addEventListener("DOMContentLoaded", () => {
     "testimonials-container"
   );
   const locationsContainer = document.getElementById("locations-container");
+  const accordionsContainer = document.getElementById("accordions-container");
   const footerLinksContainer = document.getElementById(
     "footer-links-container"
   );
@@ -320,6 +329,28 @@ document.addEventListener("DOMContentLoaded", () => {
           <h5>${location.country}</h5>
           <p>${location.street}</p>
           <p>${location.city}</p>
+        </div>
+    `;
+  });
+
+  // Accordions
+  accordions.forEach((accordion) => {
+    accordionsContainer.innerHTML += `
+        <div class="accordion">
+          <div class="question">
+            <div class="text">
+              <img src="./assets/icons/question.svg" alt="Question Mark" />
+              <h4>${accordion}</h4>
+            </div>
+            <img src="./assets/icons/down.svg" alt="Down Icon" class="icon"/>
+          </div>
+          <p class="answer">
+            Mattis ullamcorper velit sed ullamcorper morbi tincidunt. In metus
+            vulputate eu scelerisque felis imperdiet proin fermentum leo. Diam
+            quis enim lobortis scelerisque fermentum dui faucibus. Urna nunc
+            id cursus metus aliquam eleifend mi. Gravida quis blandit turpis
+            cursus in hac.
+          </p>
         </div>
     `;
   });
