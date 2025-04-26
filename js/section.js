@@ -12,6 +12,75 @@ const companyLogos = [
   { src: "adidas.png", alt: "Adidas" },
 ];
 
+const footerLinks = [
+  {
+    title: "Site Map",
+    links: [
+      "Homepage",
+      "Product",
+      "Services",
+      "Technology",
+      "About Us",
+      "Contact Us",
+    ],
+  },
+  {
+    title: "Services",
+    links: [
+      "Service Lineup 1",
+      "Service Lineup 2",
+      "Service Lineup 3",
+      "Service Lineup 4",
+      "Service Lineup 5",
+      "Service Lineup 6",
+    ],
+  },
+  {
+    title: "Product",
+    links: [
+      "Product Lineup 1",
+      "Product Lineup 2",
+      "Product Lineup 3",
+      "Product Lineup 4",
+      "Product Lineup 5",
+      "Product Lineup 6",
+    ],
+  },
+  {
+    title: "Help & Support",
+    links: [
+      "Live Chat",
+      "Email Support",
+      "Product Refund",
+      "Submit Feedback",
+      "Help Ticket",
+      "Call Center",
+    ],
+  },
+  {
+    title: "Legal",
+    links: [
+      "Privacy Policy",
+      "HIPAA Notice",
+      "Data Policy",
+      "AI Privacy",
+      "Terms & Conditions",
+      "Lawyer's Corner",
+    ],
+  },
+  {
+    title: "Pricing",
+    links: [
+      "Pricing Tier 1",
+      "Pricing Tier 2",
+      "Pricing Tier 3",
+      "Pricing Tier 4",
+      "Pricing Tier 5",
+      "Pricing Tier 6",
+    ],
+  },
+];
+
 const primaryFeatures = [
   {
     logo: "lightning.svg",
@@ -172,6 +241,10 @@ document.addEventListener("DOMContentLoaded", () => {
     "testimonials-container"
   );
   const locationsContainer = document.getElementById("locations-container");
+  const footerLinksContainer = document.getElementById(
+    "footer-links-container"
+  );
+  const footerText = document.getElementById("footer-text");
 
   // Company Logos Section
   companyLogos.forEach((logo) => {
@@ -250,4 +323,19 @@ document.addEventListener("DOMContentLoaded", () => {
         </div>
     `;
   });
+
+  // Footer
+  footerLinks.forEach((section) => {
+    footerLinksContainer.innerHTML += `
+        <div>
+          <h5>${section.title}</h5>
+          <ul>
+          ${section.links.map((link) => `<li>${link}</li>`).join("")}
+          </ul>
+        </div>
+    `;
+  });
+
+  // Footer Text
+  footerText.innerText = `Copyright ${new Date().getFullYear()} slothUI, All Rights Reserved.`;
 });
